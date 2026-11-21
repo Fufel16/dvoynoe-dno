@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>База знаний музея «Двойное Дно»</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Книга знаний музея «Двойное Дно»</h1>
+    <p>Полная база для экскурсоводов • «Доверяй, но проверяй»</p>
+  </header>
+
+  <div class="controls">
+    <input type="text" id="search" placeholder="Поиск по любому слову из книги знаний..." autocomplete="off">
+    <div class="filters" id="filters">
+      <button class="filter-btn active" data-category="all">Все</button>
+      <button class="filter-btn" data-category="Вариант сценария экскурсии в 1 зале">Экскурсия</button>
+      <button class="filter-btn" data-category="О деньгах">О деньгах</button>
+      <button class="filter-btn" data-category="О людях">О людях</button>
+      <button class="filter-btn" data-category="Термины и определения">Термины</button>
+      <button class="filter-btn" data-category="Приложения.">Приложения</button>
+    </div>
+  </div>
+
+  <main>
+    <div class="stats" id="stats"></div>
+    <div class="cards" id="cards"></div>
+  </main>
+
+  <!-- Modal for full text -->
+  <div class="modal-overlay" id="modal">
+    <div class="modal">
+      <div class="modal-header">
+        <button class="close-btn" id="closeModal">&times;</button>
+        <h2 id="modalTitle"></h2>
+        <div class="cat" id="modalCategory"></div>
+      </div>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <footer>
+    База знаний музея «Двойное Дно» и «Музея Денежного наследия».<br>
+    Полные тексты всех разделов из исходной книги знаний. Для обновления редактируйте <code>data.js</code>.
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
