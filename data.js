@@ -1357,6 +1357,6 @@ const knowledgeBase = [
     "category": "О людях",
     "level": 2,
     "tags": [],
-    "content": "67 всем нашим братьям"
+    "content": " Привет, мир! Я Юля"
   }
 ];
